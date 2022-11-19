@@ -1,1 +1,610 @@
 /* You can add global styles to this file, and also import other style files */
+// Extra small devices (portrait phones, less than 576px)
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+html, body {
+  margin: 0;
+  height: 100%;
+  font-size: 100%;
+}
+
+body {
+  background: #FEFEFE;
+  overflow-x: hidden;
+  line-height: 18px;
+  min-height: 100vh;
+  font-family: "Titillium", Helvetica, Arial, sans-serif !important;
+  color: #353535;
+}
+
+p {
+  line-height: 1.5em
+}
+
+a:hover {
+  text-decoration: none;
+  color: #66aae0;
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 1.25em;
+  color: #03aed8;
+}
+
+h3 {
+  font-size: 1.125em;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+h4 {
+  font-size: 1.125em;
+  color: #03aed8;
+}
+
+h5 {
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+h6 {
+  font-size: 0.85em;
+  text-transform: uppercase;
+}
+
+hr {
+  width: 100%;
+  display: block;
+}
+
+hr.fin-dark {
+  border-top: 1px solid #c5c7c8;
+}
+
+hr.fin-light {
+  border-top: 1px solid #f1f1f1;
+}
+
+/* ---------- Principal Styles   ------------ */
+
+.row {
+  margin-right: 0 !important;
+  margin-left: 0 !important
+}
+
+/* ---------- Colors ------------ */
+
+.color {
+  margin: 0 10px 10px 0;
+  width: 20px;
+  height: 20px;
+  float: left;
+}
+
+.fin01 {
+  color: rgba(3, 174, 216, 1);
+}
+
+.fin02 {
+  color: rgba(102, 170, 224, 1);
+}
+
+.fin03 {
+  color: rgba(2, 194, 159, 1);
+}
+
+.fin04 {
+  color: rgba(37, 84, 233, 1);
+}
+
+.fin05 {
+  color: rgba(234, 130, 147, 1);
+}
+
+.fin06 {
+  color: rgba(169, 239, 196, 1);
+}
+
+.fin07 {
+  color: rgba(147, 55, 208, 1);
+}
+
+.fin08 {
+  color: rgba(249, 233, 88, 1);
+}
+
+.fin09 {
+  color: rgba(245, 56, 77, 1);
+}
+
+.fin10 {
+  color: rgba(253, 175, 23, 1);
+}
+
+.fin11 {
+  color: rgba(110, 110, 110, 1);
+}
+
+.bgd-fin01 {
+  background: rgba(3, 174, 216, 1);
+}
+
+.bgd-fin02 {
+  background: rgba(102, 170, 224, 1);
+}
+
+.bgd-fin03 {
+  background: rgba(2, 194, 159, 1);
+}
+
+.bgd-fin04 {
+  background: rgba(37, 84, 233, 1);
+}
+
+.bgd-fin05 {
+  background: rgba(234, 130, 147, 1);
+}
+
+.bgd-fin06 {
+  background: rgba(169, 239, 196, 1);
+}
+
+.bgd-fin07 {
+  background: rgba(147, 55, 208, 1);
+}
+
+.bgd-fin08 {
+  background: rgba(249, 233, 88, 1);
+}
+
+.bgd-fin09 {
+  background: rgba(245, 56, 77, 1);
+}
+
+.bgd-fin10 {
+  background: rgba(253, 175, 23, 1);
+}
+
+.bgd-fin11 {
+  background: rgba(110, 110, 110, 1);
+}
+
+/* ---------- fin-buttons  ------------ */
+
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn-default:focus, .btn-default.active:focus {
+  outline: 0 none;
+  border: none
+}
+
+.btn {
+  padding: 6px 12px 4px 12px;
+  line-height: 1.42857143;
+  text-align: center;
+  border-radius: 0;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-fin-default {
+  background: #4b5155;
+  color: #fff;
+}
+
+.btn-fin01 {
+  background: rgba(3, 174, 216, 1);
+  color: #fff;
+  border-color: rgba(3, 174, 216, 1);
+  margin-top: 1px;
+}
+
+.btn-fin02 {
+  background: rgba(102, 170, 224, 1);
+  color: #fff;
+}
+
+.btn-fin03 {
+  background: rgba(2, 194, 159, 1);
+  color: #fff;
+}
+
+.btn-fin04 {
+  background: rgba(37, 84, 233, 1);
+  color: #fff;
+}
+
+.btn-fin05 {
+  background: rgba(234, 130, 147, 1);
+  color: #fff;
+}
+
+.btn-fin06 {
+  background: rgba(169, 239, 196, 1);
+}
+
+.btn-fin07 {
+  background: rgba(147, 55, 208, 1);
+  color: #fff;
+}
+
+.btn-fin08 {
+  background: rgba(249, 233, 88, 1);
+}
+
+.btn-fin09 {
+  background: rgba(245, 56, 77, 1);
+  color: #fff;
+}
+
+.btn-fin10 {
+  background: rgba(253, 175, 23, 1);
+}
+
+.btn-fin11 {
+  background: rgba(110, 110, 110, 1);
+  color: #fff;
+}
+
+.btn-fin-default:hover, .btn-fin01:hover, .btn-fin02:hover, .btn-fin03:hover, .btn-fin04:hover, .btn-fin05:hover, .btn-fin06:hover, .btn-fin07:hover, .btn-fin08:hover, .btn-fin09:hover, .btn-fin10:hover, .btn-fin11:hover {
+  background: rgba(102, 170, 224, .75);
+  color: #353535;
+}
+
+/* ---------- Fin-breadcrump ------------ */
+
+.fin-breadcrumb {
+  margin-bottom: 30px;
+}
+
+.fin-breadcrumb .breadcrumb > li {
+  margin: 0 0 0 20px
+}
+
+.fin-breadcrumb ul.breadcrumb {
+  border-top: solid 1px #c5c7c8;
+  border-bottom: solid 1px #ededed;
+}
+
+.breadcrumb {
+  padding: 0;
+  list-style: none;
+  background: none;
+  border-radius: 0 !important;
+  font-size: 0.8em
+}
+
+.breadcrumb > li a {
+  color: #939598;
+}
+
+.breadcrumb > li + li:before {
+  padding: 0;
+  color: #ccc;
+  content: "/\00a0";
+}
+
+/* ---------- Fin-content ------------ */
+
+.content li {
+  list-style: none
+}
+
+.content li {
+  font-family: "Titillium", Helvetica, Arial, sans-serif;
+  color: #353535;
+  margin: 5px 0 0 20px;
+}
+
+.content li a:hover, li:focus {
+  color: rgba(102, 170, 224, 1);
+  text-decoration: none;
+}
+
+.content li:before {
+  content: "\f105";
+  font-family: FontAwesome;
+  color: #66aae0;
+  margin-right: 10px;
+  margin-left: -15px !important;
+}
+
+.list-grey li:before {
+  content: "\f105";
+  font-family: FontAwesome;
+  color: #b1b4b6;
+  margin-right: 10px;
+  margin-left: -15px !important;
+  font-size: 12px
+}
+
+.list-grey li a, .bgd_grey li a {
+  color: #353535
+}
+
+.brd_grey {
+  border: solid 1px #f1f1f1;
+}
+
+.bgd_grey {
+  background: #f1f1f1;
+}
+
+.pglr5 {
+  padding: 0 5px;
+}
+
+.pg20 {
+  padding: 20px;
+}
+
+.mgtb10 {
+  margin: 10px 0;
+}
+
+.mgb10 {
+  margin: 0 0 10px 0;
+}
+
+.mgt10 {
+  margin: 10px 0 0 0;
+}
+
+.patb20 {
+  padding: 20px 0;
+}
+
+.pab20 {
+  padding: 0 0 20px 0;
+}
+
+.pat20 {
+  padding: 20px 0 0 0;
+}
+
+.mgtb20 {
+  margin: 20px 0;
+}
+
+.mgb20 {
+  margin: 0 0 20px 0;
+}
+
+.mgt20 {
+  margin: 20px 0 0 0;
+}
+
+.patb30 {
+  padding: 30px 0;
+}
+
+.pab30 {
+  padding: 0 0 30px 0;
+}
+
+.pat30 {
+  padding: 30px 0 0 0;
+}
+
+.mgtb30 {
+  margin: 30px 0;
+}
+
+.mgb30 {
+  margin: 0 0 30px 0;
+}
+
+.mgt30 {
+  margin: 30px 0 0 0;
+}
+
+.patb40 {
+  padding: 40px 0;
+}
+
+.pab40 {
+  padding: 0 0 40px 0;
+}
+
+.pat40 {
+  padding: 40px 0 0 0;
+}
+
+.mgtb40 {
+  margin: 40px 0;
+}
+
+.mgb40 {
+  margin: 0 0 40px 0;
+}
+
+.mgt40 {
+  margin: 40px 0 0 0;
+}
+
+/* ---------- Fin-elements ------------ */
+
+.box {
+  display: flex;
+}
+
+.box-item {
+  align-items: stretch;
+  min-height: 270px
+}
+
+.fin-ico {
+  width: 60px;
+  margin: 0 auto
+}
+
+.fin-ico img {
+  width: 60px;
+  height: auto;
+}
+
+.row {
+  margin-right: 0 !important;
+  margin-left: 0 !important
+}
+
+hr {
+  width: 100%;
+  display: block;
+}
+
+hr.fin-dark {
+  border-top: 1px solid #c5c7c8;
+}
+
+hr.fin-light {
+  border-top: 1px solid #f1f1f1;
+}
+
+/* ---------- Collapse  ------------ */
+
+.panel-group .panel {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  border: none;
+}
+
+.panel-default > .panel-heading {
+  color: #333;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.panel-default {
+  border-color: #fff;
+}
+
+.panel-collapse > .panel-body {
+  background-color: #f1f1f1;
+}
+
+.panel-heading a {
+  font-weight: 400;
+  padding: 5px 10px 5px 10px;
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  text-decoration: none;
+}
+
+.panel-heading a:hover {
+  color: rgba(102, 170, 224, 1);
+}
+
+.panel-heading a:before {
+  content: "\f078";
+  font-family: FontAwesome;
+  color: #66aae0;
+  margin-right: 3px;
+  margin-left: -10px !important;
+}
+
+.panel-heading a.collapsed:before {
+  content: "\f054";
+  font-family: FontAwesome;
+  color: #66aae0;
+  margin-right: 3px;
+  margin-left: -10px !important;
+}
+
+/* ---------- Global Media Queries ------------------ */
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  //* {
+  //  font-size: 0.8rem;
+  //}
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+
+  //* {
+  //  font-size: 0.8rem;
+  //}
+
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.confirm-dialog-container .mat-dialog-container {
+  border-radius: .25em .25em .4em .4em;
+  padding: 0px;
+}
+
+.confirm-dialog-container .content-container {
+  margin: 5px 5px 15px 5px;
+  color: #8f9cb5;
+  display: flex;
+}
+
+.confirm-dialog-container #close-icon {
+  margin-left: auto;
+  order: 2;
+  font-weight: bolder;
+}
+
+.confirm-dialog-container #close-icon:hover {
+  cursor: pointer;
+}
+
+.confirm-dialog-container #no-button {
+  height: 50px;
+  width: 50%;
+  background-color: #fc7169;
+  color: white;
+  border-radius: 0px;
+}
+
+.confirm-dialog-container #yes-button {
+  height: 50px;
+  width: 50%;
+  background-color: #b6bece;
+  color: white;
+  border-radius: 0px;
+}
+
+.confirm-dialog-container span.content-span {
+  padding: 35px 16px;
+  text-align: center;
+  font-size: 20px;
+
+}

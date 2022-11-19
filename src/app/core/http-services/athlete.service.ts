@@ -17,4 +17,8 @@ export class AthleteService {
   getAthleteById(id: string): Observable<Athlete>{
     return this.httpClient.get<Athlete>('http://localhost:8080/athlete/' + id);
   }
+
+  createAthlete(athlete: Athlete){
+    return this.httpClient.post('http://localhost:8080/athlete/createAthlete', athlete);
+  }
 }
